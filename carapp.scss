@@ -1,0 +1,124 @@
+html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div{
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-family:Helvetica, Arial, sans-serif;
+	font-size: 62.5%;
+}
+body {
+	background: url(images/blue_background2.jpg);
+	background-size: 100% 100%;
+}
+.heading-container {
+	position: absolute;
+	padding: 10px;
+	border-radius: 85px;
+	border: 2px solid #ccc;
+	box-shadow: 0 0 30px 10px #000;
+	width: 700px;
+	height: 150px;
+	background-color: #001e31;
+	display: block;
+	left: -730px;
+	top: 12px;
+	.logo-container {
+		padding: 10px;
+		display: inline-block;
+		height: 130px;
+		width: 130px;
+		background-color: #fff;
+		border-radius: 50%;
+		img {
+			margin: auto;
+			height: 120px;
+			width: 120px;
+		}
+	}
+	.title-text {
+		width: 530px;
+		float: right;
+		display: inline-block;
+		margin-top: 8px;
+
+		.title {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			text-shadow: 0 0 20px #000;
+			color: #fff;
+			font-size: 3.8em;
+			display: none;
+		}
+		.created-by-text {
+			text-shadow: 0 0 20px #000;
+			font-size: 2.2em;
+			color: #bbb;
+			display: none;
+		}
+	}
+}
+
+.wrapper {
+	padding: 20px;
+}
+.main-content {
+	box-shadow: 0 0 30px 5px #000;
+	background-color: #002b47;
+	width: 1000px;
+	margin: 180px auto;
+	padding: 20px;
+	border-radius: 50px;
+	.description {
+		box-shadow: 0 0 20px 5px #000;
+		margin: auto;
+		border-radius: 50px 50px 20px 20px;
+		width: 900px;
+		background-color: #fff;
+		h4 {
+		text-shadow: 0 0 30px #fff;
+		text-indent: 30px;
+		font-size: 1.6em;
+		color: #111;
+		padding: 20px;
+		}
+	}
+	
+	.media-container {
+		border-top: 3px solid #001624;
+		border-left: 3px solid #001624;
+		box-shadow: 0 0 20px 5px #000;
+		border-radius: 20px;
+		background-color: #fff;
+		width: 860px;
+		display: block;
+		padding: 20px;
+		margin: 20px auto;
+	}
+	iframe {
+		box-shadow: 0 0 20px 5px #000;
+		border: 10px solid #222;
+		border-radius: 10px;
+		width: 500px;
+		height: 500px;
+	}
+	#slider1_container{
+		box-shadow: 0 0 20px 5px #000;
+		border: 10px solid #222;
+		border-radius: 10px;
+		float: right;
+		display: inline-block;
+		width: 300px;
+		height: 500px;
+		.slider2 {
+			width: 300px;
+		height: 500px;
+		}
+	}
+
+	 img {
+		background-size: 100% 100%;
+	}
+}
+.clear {
+	clear: both;
+}
