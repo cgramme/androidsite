@@ -5,13 +5,16 @@ html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div{
 html {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-size: 62.5%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 body {
 	background: url(images/blue_background2.jpg);
 	background-size: 100% 100%;
 }
 .heading-container {
-	position: absolute;
 	padding: 10px;
 	border-radius: 85px;
 	border: 2px solid #ccc;
@@ -19,9 +22,8 @@ body {
 	width: 700px;
 	height: 150px;
 	background: url(images/repeating_background.png);
-	display: block;
-	left: -730px;
-	top: 12px;
+	display: none;
+	margin: 10px auto 30px auto;
 	.logo-container {
 		padding: 10px;
 		display: inline-block;
@@ -44,11 +46,10 @@ body {
 
 		.title {
 			padding-top: 20px;
-			padding-bottom: 20px;
+			padding-bottom: 10px;
 			text-shadow: 0 0 20px #000;
 			color: #fff;
 			font-size: 3.8em;
-			display: none;
 			text-shadow: 2px 2px 5px #000;
 		}
 		.created-by-text {
@@ -63,41 +64,58 @@ body {
 
 .wrapper {
 	padding: 20px;
+	@media screen and (max-width: 700px) {
+         padding: 0;
+    }
 }
 .main-content {
 	box-shadow: 0 0 30px 5px #000, inset 0 0 10px 0 #000;
 	background-color: #ccc;
 	width: 1000px;
-	margin: 180px auto;
+	margin: 10px auto;
 	padding: 20px;
 	border-radius: 100px 100px 50px 50px;
+	@media screen and (max-width: 1100px) {
+         width: 90%;
+    }
+    @media screen and (max-width: 700px) {
+         width: 100%;
+         margin: 0;
+         border-radius: 0;
+         padding: 10px 0 0 0;
+    }
 	.description {
-		box-shadow: 0 0 20px 5px #000, inset 0 0 5px 0 #000;
 		margin: auto;
 		border-radius: 70px 70px 20px 20px;
-		border: 1px solid #ccc;
-		width: 900px;
-		background: url(images/repeating_background.png);
+		width: 90%;
 		h4 {
-		text-shadow: 2px 2px 5px #000;
-		text-indent: 30px;
-		font-size: 1.8em;
-		color: #eee;
-		padding: 20px;
-		font-family: "Raleway";
-		font-weight: 100;
+			text-shadow: 2px 2px 5px #999;
+			text-indent: 30px;
+			font-size: 2em;
+			color: #222;
+			@media screen and (max-width: 700px) {
+         		font-size: 1.5em;
+         		margin-bottom: 10px;
+    		}
 		}
 	}
 	
 	.media-container {
 		box-shadow: 0 0 20px 5px #000, inset 0 0 5px 0 #000;
 		border-radius: 20px;
-		border: 1px solid #ccc;
+		border: 1px solid #777;
 		background: url(images/repeating_background.png);
 		width: 860px;
 		display: block;
 		padding: 20px;
 		margin: 20px auto;
+		@media screen and (max-width: 1100px) {
+         width: 90%;
+        }
+        @media screen and (max-width: 700px) {
+         margin: 0 auto;
+         padding: 5px;
+    	}
 	}
 	iframe {
 		box-shadow: 0 0 20px 5px #000;
@@ -105,6 +123,15 @@ body {
 		border-radius: 10px;
 		width: 500px;
 		height: 500px;
+		margin: 0;
+		display: inline-block;
+		@media screen and (max-width: 1100px) {
+         margin:  0 auto;
+         display: block;
+        }
+        @media screen and (max-width: 700px) {
+         width: 90%;
+    	}
 	}
 	#slider1_container{
 		box-shadow: 0 0 20px 5px #000;
@@ -114,9 +141,15 @@ body {
 		display: inline-block;
 		width: 300px;
 		height: 500px;
+		margin: 0;
+		@media screen and (max-width: 1100px) {
+         float: none;
+         margin: 20px auto 0 auto;
+         display: block;
+        }
 		.slider2 {
 			width: 300px;
-		height: 500px;
+			height: 500px;
 		}
 	}
 
