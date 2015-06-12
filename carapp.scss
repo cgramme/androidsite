@@ -21,7 +21,7 @@ body {
 	box-shadow: 0 0 30px 10px #000, inset 0 0 10px 0 #000;
 	width: 700px;
 	height: 150px;
-	background: url(images/repeating_background.png);
+	background: url(images/repeat2.jpg);
 	display: block;
 	margin: 10px auto 30px auto;
 	@media screen and (max-width: 700px) {
@@ -31,6 +31,12 @@ body {
          margin: 0;
          border: none;
          height: 300px;
+    }
+    @media screen and (max-width: 520px){
+    	height: 280px;
+    }
+    @media screen and (max-width: 420px){
+    	height: 270px;
     }
 	.logo-container {
 		padding: 10px;
@@ -138,7 +144,7 @@ body {
 		box-shadow: 0 0 20px 5px #000, inset 0 0 5px 0 #000;
 		border-radius: 20px;
 		border: 1px solid #777;
-		background: url(images/repeating_background.png);
+		background: url(images/repeat2.jpg);
 		width: 860px;
 		display: block;
 		padding: 20px;
@@ -156,9 +162,12 @@ body {
 		border: 10px solid #222;
 		border-radius: 10px;
 		width: 500px;
+		height: 500px;
 		margin: 0;
 		display: inline-block;
+		float: left;
 		@media screen and (max-width: 1100px) {
+		 float: none;
          margin:  0 auto;
          display: block;
         }
@@ -174,6 +183,7 @@ body {
 		width: 300px;
 		height: 500px;
 		margin: 0;
+		float: right;
 		@media screen and (max-width: 1100px) {
          float: none;
          margin: 20px auto 0 auto;
@@ -191,4 +201,9 @@ body {
 }
 .clear {
 	clear: both;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
