@@ -44,6 +44,7 @@ $(document).ready(function(){
         $.ajax('car_maintenance_app.html', {
           success: function(data) {
              $('.media-wrap').html(data);
+             startSlideShow();
           }
        });
     });
@@ -51,17 +52,23 @@ $(document).ready(function(){
         $.ajax('recipe_app.html', {
           success: function(data) {
              $('.media-wrap').html(data);
+             startSlideShow();
           }
        });
     });
-      //slideshow
-	  var _SlideshowTransitions = [
+
+    startSlideShow();
+     
+});
+function startSlideShow(){
+     //slideshow
+      var _SlideshowTransitions = [
             //Custom slide show transitions. You can add as many as you like. Will start from top first.
-	  		//{$Duration:1200,$Opacity:2},
+            //{$Duration:1200,$Opacity:2},
             //{$Duration:1000,$Delay:80,$Cols:8,$Rows:4,$Clip:15,$SlideOut:true,$Easing:$JssorEasing$.$EaseOutQuad},
             {$Duration:1000,$Opacity:2,x:1,$Easing:$JssorEasing$.$EaseInQuad}
 
-	  ];
+      ];
       //slideshow object
         var options = {
             $AutoPlay: true,
@@ -92,7 +99,7 @@ $(document).ready(function(){
     $(window).bind("resize", ScaleSlider);
     $(window).bind("orientationchange", ScaleSlider);
     resizeWindow();
-});
+}
 //on window resize center and optimize
 $(window).resize(function(){
     resizeWindow();
