@@ -75,6 +75,38 @@ body {
     -webkit-animation: fadeIn 1s forwards;
     animation: fadeIn 1s forwards;
 }
+@keyframes fadeInZoom {
+    0%{
+    	opacity: 0;
+    	transform: scale(0.8);
+		-ms-transform: scale(0.8);
+		-webkit-transform: scale(0.8);
+    }
+    100%{
+    	opacity: 1;
+    	transform: scale(1);
+		-ms-transform: scale(1);
+		-webkit-transform: scale(1);
+    }
+}
+@-webkit-keyframes fadeInZoom {
+    0%{
+    	opacity: 0;
+    	transform: scale(0.8);
+		-ms-transform: scale(0.8);
+		-webkit-transform: scale(0.8);
+    }
+    100%{
+    	opacity: 1;
+    	transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+    }
+}
+.fade-in-zoom {
+    -webkit-animation: fadeInZoom 5s forwards;
+    animation: fadeInZoom 5s forwards;
+}
 
 
 @keyframes listOutAnima {
@@ -104,6 +136,7 @@ body {
 
 
 .start-pic {
+	opacity: 0;
 	background: url(images/android_logo.png);
 	background-size: 100% 100%;
 	position: absolute;

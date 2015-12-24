@@ -27,6 +27,7 @@ $(document).on('click','.title', function(){
 
 
 $(document).ready(function(){
+    $('.start-pic').addClass('fade-in-zoom');
 
     $('.menu .courses').on('click',function(){listOut($('.menu li'), 0, 50);listIn($('.app-menu li'), 0, 50);});
     $('.app-menu').on('click mouseleave', function(){listIn($('.menu li'), 0, 50);listOut($('.app-menu li'), 0, 50);});
